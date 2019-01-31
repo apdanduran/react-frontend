@@ -1,0 +1,42 @@
+@import 'base.sass'
+@import '~bootstrap/scss/bootstrap.scss'
+
+html 
+  box-sizing: border-box
+
+html,
+body 
+  margin: 0
+  padding: 0
+  height: 100%
+
+*,
+*:before,
+*:after 
+  box-sizing: inherit
+
+header 
+  background-color: #ffe2d8
+
+  .navbar-brand
+    color: #e93578 !important
+
+  .nav-link
+    color: #e93578 !important
+
+    &:hover 
+      text-decoration: underline
+
+  .active
+    text-decoration: underline
+
+  .navbar-collapse
+    flex-grow: 0
+    @media(min-width: 992px)
+      flex-basis: auto 
+      
+form
+  width: 530px
+  margin-top: 200px
+  margin-left: auto
+  margin-right: auto
